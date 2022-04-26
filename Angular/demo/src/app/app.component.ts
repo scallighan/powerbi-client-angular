@@ -305,4 +305,19 @@ export class AppComponent {
     // Add class to the display message
     this.statusRef.nativeElement.classList.add(type);
   }
+
+  private popupWindow!: any;
+
+  popup() {
+    const popupWindowStyle = 'width=1000,height=500,left=100,top=100';
+    this.popupWindow = window.open('/assets/vanilla.html', 'powerbi-report', popupWindowStyle);
+    if(this.popupWindow != null){
+      this.popupWindow.addEventListener('load', () => {
+        this.popupWindow.addEventListener("visualClicked", (event: any) => {
+          console.log('parent console... visualClicked')
+          console.log(event);
+        })
+      });
+    }
+  }
 }

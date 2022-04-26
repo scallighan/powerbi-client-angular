@@ -5,6 +5,10 @@ Licensed under the MIT License. -->
   <div class="title">Power BI Embedded Angular Component demo</div>
 </div>
 
+<div>
+  <button (click)="popup()">Launch Popup!</button>
+</div>
+
 <div class="controls" *ngIf="isEmbedded; else embedReportFlow">
   <button (click)="deleteVisual()">Delete Visual</button>
   <button (click)="hideFilterPane()">Hide Filter Pane</button>
