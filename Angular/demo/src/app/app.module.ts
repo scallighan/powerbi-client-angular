@@ -7,10 +7,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { PowerBIEmbedModule } from 'powerbi-client-angular';
 import { AppComponent } from './app.component';
 import { PopupfunComponent } from './popupfun/popupfun.component';
-import { VanillapopupComponent } from './vanillapopup/vanillapopup.component';
+import { DcpopupComponent } from './dcpopup/dcpopup.component';
 
 @NgModule({
-  declarations: [AppComponent, PopupfunComponent, VanillapopupComponent],
+  declarations: [AppComponent, PopupfunComponent, DcpopupComponent],
   imports: [BrowserModule, HttpClientModule, PowerBIEmbedModule],
   providers: [],
   bootstrap: [AppComponent],

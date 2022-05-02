@@ -10,14 +10,14 @@ import { WindowPostMessageProxy } from 'window-post-message-proxy';
 const popupWindowStyle = 'width=1000,height=500,left=100,top=100';
 
 @Component({
-    selector: 'app-vanillapopup',
-    templateUrl: './vanillapopup.component.html',
-    styleUrls: ['./vanillapopup.component.css']
+    selector: 'app-dcpopup',
+    templateUrl: './dcpopup.component.html',
+    styleUrls: ['./dcpopup.component.css']
   })
-export class VanillapopupComponent implements OnInit {
+export class DcpopupComponent implements OnInit {
     private popupWindow!: Window;
 
-    displayMessage = "Click that vanilla button!"
+    displayMessage = "Click that dc button!"
     reportConfig = {
         type: 'report',
         tokenType: 1,
