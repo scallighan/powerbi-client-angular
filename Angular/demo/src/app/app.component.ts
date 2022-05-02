@@ -139,6 +139,8 @@ export class AppComponent {
 
     // Update the display message
     this.displayMessage = 'Access token is successfully set. Loading Power BI report.';
+    console.log(this.displayMessage);
+    console.log(this.reportObj)
   }
 
   /**
